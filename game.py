@@ -2,6 +2,7 @@ import numpy as np
 number = np.random.randint(1,101)    # загадали число
 print ("Загадано число от 1 до 100")
 
+
 def score_game(game_core):
     '''Запускаем игру 1000 раз, чтобы узнать, как быстро игра угадывает число'''
     count_ls = []
@@ -32,5 +33,6 @@ def game_core_v2(number):
             max_limit = predict
             predict = np.random.randint(min_limit,max_limit)
     return(count) # выход из цикла, если угадали
+
 
 score_game(game_core_v2)
