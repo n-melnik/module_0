@@ -32,7 +32,7 @@ def game_core_v2(number):
         elif number < predict:
             max_limit = predict
             predict = np.random.randint(min_limit,max_limit)
-    return(count) # выход из цикла, если угадали
+    return(count) #выход из цикла, если угадали
 
 
 score_game(game_core_v2)
